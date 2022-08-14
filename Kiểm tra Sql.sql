@@ -128,9 +128,17 @@ WHERE  ROWNUM <11 ORDER BY SOLUONGCONLAI DESC;
 --7.	Hiển thị  thông tin bạn đọc và sách được mượn từ ngày đầu tháng hiện tại đến thời điểm hiện tại.
 SELECT MA_BANDOC,TEN_BANDOC,MA_SACH,TEN_SACH,NGAYMUON_MUONSACH,SOLUONGCONLAI
 FROM DOAN_TU_BANDOC BD JOIN DOAN_TU_MUONSACH MS ON BD.ID = MS.ID_BANDOC JOIN DOAN_TU_SACH S ON MS.ID_SACH = S.ID
-ORDER BY TEN_BANDOC ASC ;
-
+ORDER BY MS.NGAYMUON_MUONSACH DESC, BD.TEN_BANDOC ;
 --8.	Hiển thị 10 quyển sách có số lượng được mượn nhiều nhất tính từ đầu năm 2022
 --9.	Hiển thị danh sách bạn đọc và số lần mượn sách tính từ đầu năm 2022 sắp xếp theo tên bạn đọc tăng dần:
 -- SELECT BD.MA_BAN_DOC , BD.TEN_BAN_DOC FROM DOAN_TU_BANDOC BD
 --10.	Hiển thị thông tin bạn đọc gồm có:
+SELECT *FROM DOAN_TU_BANDOC;
+SELECT MA_BANDOC,TEN_BANDOC, TO_NUMBER(TO_CHAR(SYSDATE,'YYYY')) - TO_NUMBER(TO_CHAR(NGAYSINH_BANDOC,'YYYY')) AS TUỔI
+FROM DOAN_TU_BANDOC;
+--11.	Thống kê tổng số bạn đọc theo độ tuổi
+SELECT (TO_CHAR(SYSDATE,'YYYY') - TO_CHAR(NGAYSINH_BANDOC,'YYYY')) AS TUỔI ,COUNT(ID) AS TỔNGSỐBẠNĐỌC
+FROM DOAN_TU_BANDOC GROUP BY (TO_CHAR(SYSDATE,'YYYY'))- TO_CHAR(NGAYSINH_BANDOC,'YYYY');
+--12.	Thống kê số lượng sách được xuất bản theo Nhà Xuất Bản, Theo năm xuất bản.
+--13.	Hiển thị 5 quyển sách được các bạn đọc có độ tuổi từ 18 đến 25 mượn nhiều nhất tính từ đầu năm 2022. (Tính theo trường số lượng mượn của sách)
+--14.	Hiển thị toàn bộ bạn đọc và sách mà bạn đọc đấy mượn, sẽ có bạn chưa mượn vẫn cần hiển thị và tên sách để là null.

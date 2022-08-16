@@ -1,12 +1,12 @@
-
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.stream.Stream;
 
 public class ArraySortExample {
     public static void main(String[] args) {
         Arrays.sort(args);
-        int i;
-        for (i= 0;i <args.length;i++){
+
+        for (int i =0; i < args.length;i++){
             System.out.println(args[i]);
         }
         System.out.println("============");
@@ -16,10 +16,9 @@ public class ArraySortExample {
                 return o2.compareTo(o1);
             }
         });
-
-        for (int i= 0;i < args.length;i++){
+        for (int i =0; i < args.length; i++){
             System.out.println(args[i]);
         }
+
     }
 }
-

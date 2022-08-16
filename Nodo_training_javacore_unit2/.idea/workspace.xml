@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5d5d03d0-71f4-41f2-a80d-53fc61cf3a50" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/ArrayExample1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/IfElseExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/MathExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/MethodExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/MultidimensionalArrayExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/MyPrgram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/MyProgram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/NumberExample.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/Person.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/PersonTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/StreamPrgram.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/StringExample1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/StringExample2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/StringExample3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/StringExample4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Nodo_training_javacore/nodo_java/src/SwitchExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ArraySortExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ArraySortExample.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/StreamArrayExample.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/StreamArrayExample.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,19 +30,19 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/Users/Admin/Lamviec/NODO_Training/Nodo_training_javacore_unit2",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Users/Admin/Lamviec/NODO_Training/Nodo_training_javacore_unit2&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Application.PreferencesExample">
     <configuration name="PreferencesExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="PreferencesExample" />
@@ -89,6 +75,7 @@
       <updated>1660551875512</updated>
       <workItem from="1660551876773" duration="5616000" />
       <workItem from="1660557651940" duration="3290000" />
+      <workItem from="1660613607343" duration="787000" />
     </task>
     <servers />
   </component>

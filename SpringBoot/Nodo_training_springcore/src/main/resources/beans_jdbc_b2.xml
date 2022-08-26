@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+    http://www.springframework.org/schema/tx
+    http://www.springframework.org/schema/tx/spring-tx.xsd
+    http://www.springframework.org/schema/jdbc
+    http://www.springframework.org/schema/jdbc/spring-jdbc.xsd">
+
+    <bean id="dataSource"
+          class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.OracleDriver"></property>
+        <property name="url" value="jdbc:oracle:thin:SCOTT/SCOTT@27.118.22.14:1521:orcl"></property>
+        <property name="username" value="SCOTT"></property>
+        <property name="password" value="SCOTT"></property>
+    </bean>
+    <bean id="studentJdbcDAO" class="Unit2.StudentJdbcDAO">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="insertQuery"
+                  value="INSERT INTO STUDENT_KANZY1(id,name,age) VALUES(STUDENT_KANZY1_SEQ.nextval,?,?)"></property>
+    </bean>
+
+<!--        <bean id="studentJdbcDAO" class="Unit2.StudentJdbcDAO" init-method="createTableIFNotExists">-->
+<!--            <property name="dataSource" ref="dataSource"></property>-->
+<!--            <property name="insertQuery"-->
+<!--                      value="INSERT INTO STUDENT_KANZY1(id,name,age) VALUES(STUDENT_HUY1_SEQ.nextval,?,?)"></property>-->
+<!--        </bean>-->
+<!--        <bean id="studentJdbcDAO" class="Unit2.StudentJdbcDAO" >-->
+<!--            <property name="dataSource" ref="dataSource"></property>-->
+<!--            <property name="updateAgeByNameQuery"-->
+<!--                      value="update STUDENT_KANZY1 set age = ? where name = ?"></property>-->
+<!--        </bean>-->
+</beans>

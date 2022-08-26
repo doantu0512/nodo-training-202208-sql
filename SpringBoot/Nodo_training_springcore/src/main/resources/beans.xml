@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans-4.2.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+
+<!--    <bean id="hello clazz" class="Unit1.HelloClazz">-->
+<!--        &lt;!&ndash;		scope="singleton"&ndash;&gt;-->
+<!--        &lt;!&ndash;		init-method="initMessage"&ndash;&gt;-->
+<!--        <property name="message" value="Welcome to Java Clazz"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="hello clazz1" class="Unit1.HelloClazz" init-method="initMessage">-->
+<!--        <property name="message" value="Welcome to Java Clazz"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="hello clazz2" class="Unit1.HelloClazz" init-method="initMessage" scope="prototype">-->
+<!--        <property name="message" value="Welcome to Java Clazz"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="hello clazz3" class="Unit1.HelloClazz" destroy-method="release">-->
+<!--        <property name="message" value="Welcome to Java Clazz"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="hello clazz4" class="Unit1.HelloClazz" init-method="initMessage" destroy-method="release">-->
+<!--        <property name="message" value="Welcome to Java Clazz"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="hello clazz5" class="Unit1.HelloClazz" >-->
+<!--        <constructor-arg type="int" value="5"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="hello clazz6" class="Unit1.HelloClazz">-->
+<!--        <constructor-arg ref="hello clazz5"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="hello clazz7" class="Unit1.HelloClazz" init-method="initMessage" >-->
+<!--        <constructor-arg type="int" value="5"/>-->
+<!--    </bean>-->
+
+<!--    <bean id="hello clazz8" class="Unit1.HelloClazz" init-method="initMessage" >-->
+<!--        <constructor-arg ref="hello clazz7"/>-->
+<!--    </bean>-->
+
+<!--    <bean class="Unit1.InitSampleBean" ></bean>-->
+
+<!--    <bean id ="helloWord" class ="Unit1.HelloWord"></bean>-->
+
+<!--    <bean id="hello clazz9" class="Unit1.HelloClazz"  >-->
+<!--        <property name="message" value="Hello Sub bean!"></property>-->
+<!--    </bean>-->
+<!--    <bean id="helloWorld" class="Unit1.HelloWord" parent="hello clazz9"></bean>-->
+
+    <bean id="sampleTemplate" abstract="true" >
+        <property name="message" value="Template say hello!"></property>
+    </bean>
+    <bean id="helloWord" class="Unit1.HelloWord" parent="sampleTemplate"></bean>
+    <bean id="helloWord2" class="Unit1.HelloWord">
+        <constructor-arg type="java.lang.String" value="Thuan"/>
+        <constructor-arg ref="hello clazz10"/>
+    </bean>
+    <bean id="hello clazz10" class="Unit1.HelloClazz"/>
+    <bean id="hello clazz11" class="Unit1.HelloClazz" >
+        <property name="message" value="Hello Bean Inhertitance!"/>
+    </bean>
+
+
+
+
+
+
+</beans>
+
+

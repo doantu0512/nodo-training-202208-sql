@@ -1,6 +1,8 @@
 package controller;
 
+import DAO.StudentDAO;
 import model.Student;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
@@ -9,10 +11,16 @@ import org.springframework.web.servlet.ModelAndView;
 import javax.validation.Valid;
 @Controller
 public class StudentController {
+
+
     @RequestMapping(value = "student/add",method = RequestMethod.GET)
     public ModelAndView add(){
         return new ModelAndView("student.form","command",new Student());
     }
+
+    @Autowired
+    private StudentDAO dao;
+
     @RequestMapping(value = "student/save",method = RequestMethod.POST)
     public ModelAndView save(@Valid @ModelAttribute("command") Student student, BindingResult result){
         if(result.hasErrors()){

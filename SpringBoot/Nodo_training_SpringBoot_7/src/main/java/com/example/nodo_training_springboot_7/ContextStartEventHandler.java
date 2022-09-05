@@ -17,7 +17,15 @@ public class ContextStartEventHandler implements ApplicationListener<ContextStar
     @Override
     public void onApplicationEvent(ContextStartedEvent event) {
 
-//        LOGGER.info("context start application"+dataSource);
+        try {
+            createTable("Student_KANZY2","create table Student_KANZY2\n" +
+                    "(\n" +
+                    "\tid int auto_increment primary key not null,\n" +
+                    "    name varchar(100)\n" +
+                    ")\n");
+        }catch (Exception e){
+            LOGGER.error(e,e);
+        }
     }
     private void createTable(String name, String script)throws Exception{
         DatabaseMetaData dbmd = dataSource.getConnection().getMetaData();

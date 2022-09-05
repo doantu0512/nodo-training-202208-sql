@@ -56,6 +56,15 @@
         <property name="password" value="SCOTT"/>
     </bean>
     <bean id="startEventHandler" class="com.example.nodo_training_springboot_7.ContextStartEventHandler">
-
+    </bean>
+    <bean id="sessionFactory" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="dataSource" ref="dataSource"/>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">org.hibernate.dialect.DerbyTenSixDialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+            </props>
+        </property>
+        <property name="packagesToScan" value="com.example.nodo_training_springboot_7.Model"/>
     </bean>
 </beans>

@@ -1,0 +1,77 @@
+{
+  "productList": [
+    {
+      "productName": "Khóm",
+      "category": "Nước lã",
+      "date": "2022-09-07T17:00:00.000Z",
+      "color": "Vàng",
+      "price": 123455,
+      "comment": "Non",
+      "id": 2
+    },
+    {
+      "productName": "Ngọc",
+      "category": "Nước suối",
+      "date": "2022-09-07T17:00:00.000Z",
+      "color": "Xanh",
+      "price": 123124,
+      "comment": "xinh",
+      "id": 3
+    },
+    {
+      "productName": "Hương",
+      "category": "Nước suối",
+      "date": "2022-09-06T17:00:00.000Z",
+      "color": "Vàng",
+      "price": 1200,
+      "comment": "non",
+      "id": 4
+    },
+    {
+      "productName": "Đào",
+      "category": "Nước suối",
+      "date": "2022-09-12T17:00:00.000Z",
+      "color": "Tím",
+      "price": 12343,
+      "comment": "ngọt",
+      "id": 5
+    },
+    {
+      "productName": "Mơ",
+      "category": "Mắm tôm",
+      "date": "2022-09-07T17:00:00.000Z",
+      "color": "Tím",
+      "price": 2333,
+      "comment": "Bú",
+      "id": 6
+    },
+    {
+      "productName": "Na",
+      "category": "Nước lã",
+      "date": "2022-09-20T17:00:00.000Z",
+      "color": "Tím",
+      "price": 34222,
+      "comment": "Khắm",
+      "id": 7
+    },
+    {
+      "productName": "thu",
+      "category": "Nước lã",
+      "date": "2022-09-14T17:00:00.000Z",
+      "color": "Tím",
+      "price": 123,
+      "comment": "g",
+      "id": 8
+    }
+  ],
+  "UserList": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

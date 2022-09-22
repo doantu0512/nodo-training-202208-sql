@@ -15,8 +15,6 @@ export class AppComponent implements OnInit{
   title = 'CRUD_ANGULAR';
   displayedColumns: string[] = ['productName', 'category', 'date','color','price','comment','action'];
   dataSource!: MatTableDataSource<any>;
-
-
   check = false;
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
